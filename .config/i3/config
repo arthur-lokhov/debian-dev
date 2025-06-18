@@ -12,7 +12,7 @@ set $DISPLAY_MODE	1
 
 set $BOR_WIDTH		3
 set $GAP_INNER		8
-set $GAP_TOP		29
+set $GAP_TOP		0
 
 # For extra monitor(gaps top $GAP_NULL)
 set $GAP_NULL		00
@@ -86,7 +86,7 @@ gaps left		0
 exec_always 		--no-startup-id $HOME/.config/sxhkd/launch.sh
 exec_always             --no-startup-id $HOME/.config/picom/launch.sh
 exec_always             --no-startup-id $HOME/.config/dunst/launch.sh
-#exec_always             --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always             --no-startup-id $HOME/.config/polybar/launch.sh
 
 exec_always             --no-startup-id nitrogen --restore
 exec_always             --no-startup-id flameshot
