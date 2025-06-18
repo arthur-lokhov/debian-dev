@@ -1,0 +1,5 @@
+--ignore=.stowrc
+--ignore=install.sh
+--ignore=README.md
+--ignore=wallpapers
+--target=~
