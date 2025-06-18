@@ -3,7 +3,7 @@
 APP_NAME=picom
 
 # Terminate already running bar instances
-killall -q $APP_NAME
+pkill $APP_NAME
 
 # Wait until the processes have been shut down
 while pgrep -u $UID -x $APP_NAME >/dev/null
