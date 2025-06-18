@@ -14,7 +14,7 @@ detect-rounded-corners=true
 
 # Exclude specific windows from rounded corners
 rounded-corners-exclude = [
-  "window_type = 'desktop'"
+  "window_type = 'desktop'",
 ];
 
 ############ Blur ##############
