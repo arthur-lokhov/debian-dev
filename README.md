@@ -102,7 +102,6 @@ Helpful tools for everyday work and diagnostics:
 ```bash
 sudo nala install -y \
     tmux \
-    neovim \
     direnv \
     git-delta \
     stow \
@@ -127,7 +126,6 @@ sudo nala install -y \
 | Utility       | Description                                                        |
 | ------------- | ------------------------------------------------------------------ |
 | **tmux**      | Terminal multiplexer: manage multiple sessions in one window       |
-| **neovim**    | Modern Vim fork with plugin and scripting support                  |
 | **direnv**    | Automatically loads environment variables from `.envrc`            |
 | **git-delta** | Beautiful and readable `git diff` and `git blame` output           |
 | **stow**      | Manage dotfiles using symbolic links                               |
@@ -147,6 +145,15 @@ sudo nala install -y \
 | **glances**   | Real-time system monitoring                                        |
 | **xh**        | Handy CLI tool for HTTP requests (alternative to `curl`, `httpie`) |
 | **jq**        | JSON parser and processor for the terminal                         |
+
+Install the latest NeoVim version(because 0.10.x doesn't support some plugins):
+
+```bash
+wget https://github.com/neovim/neovim/releases/download/v0.11.2/nvim-linux-x86_64.tar.gz
+tar xzvf nvim-linux-x86_64.tar.gz
+sudo mv nvim-linux-x86_64 /opt/
+sudo ln -s /opt/nvim-linux-x86_64/bin/nvim /usr/local/bin/nvim
+```
 
 Install the tmux plugin manager:
 

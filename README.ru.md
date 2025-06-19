@@ -102,7 +102,6 @@ sudo nala install -y \
 ```bash
 sudo nala install -y \
     tmux \
-    neovim \
     direnv \
     git-delta \
     stow \
@@ -127,7 +126,6 @@ sudo nala install -y \
 | Утилита       | Описание                                                                  |
 | ------------- | ------------------------------------------------------------------------- |
 | **tmux**      | Мультиплексор терминала: управление несколькими сессиями в одном окне     |
-| **neovim**    | Современный форк Vim с расширенной поддержкой плагинов и скриптов         |
 | **direnv**    | Автоматическая подгрузка переменных окружения из `.envrc`                 |
 | **git-delta** | Красивый и читаемый вывод `git diff` и `git blame`                        |
 | **stow**      | Управление dotfiles с помощью символических ссылок                        |
@@ -147,6 +145,15 @@ sudo nala install -y \
 | **glances**   | Мониторинг системы в режиме реального времени                             |
 | **xh**        | Удобный CLI-клиент для HTTP-запросов (альтернатива `curl`, `httpie`)      |
 | **jq**        | Парсинг и обработка JSON из терминала                                     |
+
+Чтобы установить последнюю версию Neovim, выполните команды ниже:
+
+```bash
+wget https://github.com/neovim/neovim/releases/download/v0.11.2/nvim-linux-x86_64.tar.gz
+tar xzvf nvim-linux-x86_64.tar.gz
+sudo mv nvim-linux-x86_64 /opt/
+sudo ln -s /opt/nvim-linux-x86_64/bin/nvim /usr/local/bin/nvim
+```
 
 Также для `tmux` надо поставить менеджер плагинов:
 
