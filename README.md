@@ -247,7 +247,7 @@ Go to [http://localhost:631](http://localhost:631) to:
 - Configure drivers and print settings;
 - Manage the print queue.
 
-> [!INFO]
+> [!NOTE]
 > If you use HP printers, install:
 > `sudo nala install -y hplip-gui`
 

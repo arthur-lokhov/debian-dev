@@ -252,7 +252,7 @@ sudo systemctl start cups
 - Настроить драйвер и параметры печати;
 - Проверить очередь заданий.
 
-> [!INFO]
+> [!NOTE]
 > Если используется принтер от HP, рекомендуется установить: `hplip-gui`.
 > `sudo nala install -y hplip-gui`
 
