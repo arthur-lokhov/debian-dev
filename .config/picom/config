@@ -38,6 +38,7 @@ dropdown_menu = { opacity = 1; }
 popup_menu = { opacity = 1; }
 
 opacity-rule = [
+  "100:class_g='kdenlive'",
   "100:class_g='Alacritty'",
   "100:class_g='firefox-esr'",
   "60:class_g='Polybar'",
