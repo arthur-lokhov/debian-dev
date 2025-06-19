@@ -1,0 +1,64 @@
+#--------------------------------
+#---- Launching applications ----
+#--------------------------------
+
+## Terminal
+alt + Return
+	$TERMINAL
+
+## Browser
+alt + shift + o
+	$BROWSER
+
+## Telegram
+alt + shift + i
+	$BROWSER web.telegram.org
+
+## File Manager
+alt + shift + f
+	$FILE_MANAGER
+
+## Wallpapers
+alt + shift + n
+	nitrogen
+
+#------------------------------------
+#---- Control other applications ----
+#------------------------------------
+
+## Sxhkd
+alt + Escape
+	pkill -USR1 -x sxhkd
+
+## Lock
+alt + q
+	i3lock-fancy
+
+## Rofi
+alt + d
+	rofi -show drun -display-drun " " -lines 7 -width 35 -show-icons
+
+## Notifications
+F11
+	notify-send "DUNST_COMMAND_RESUME"
+
+F12
+	notify-send "DUNST_COMMAND_PAUSE"
+
+## Polybar
+alt + comma
+	pkill polybar
+
+alt + period
+	$HOME/.config/polybar/launch.sh
+
+## Print
+Print
+	flameshot gui
+
+super + Print
+	flameshot screen
+
+## Poweroff
+super + ctrl + {r,p}
+	sudo shutdown {-r,-h} now
