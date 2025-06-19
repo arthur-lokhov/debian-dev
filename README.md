@@ -1,5 +1,7 @@
 # ⚙️ Setting up Debian for Development
 
+![Debian preview](./assets/preview.png)
+
 This guide will help you prepare a Debian system for **comfortable** and **productive** development, including installing necessary packages, configuring the graphical environment, and useful services.
 
 ---
