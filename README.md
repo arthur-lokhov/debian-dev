@@ -249,7 +249,7 @@ Go to [http://localhost:631](http://localhost:631) to:
 
 > [!INFO]
 > If you use HP printers, install:
-> `sudo nala install -y hplip-gui
+> `sudo nala install -y hplip-gui`
 
 ### 🔄 Reboot System
 
