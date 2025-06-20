@@ -431,6 +431,36 @@ rm -rf um
 
 ---
 
+## 🎮 Installing Steam, Proton, and Gaming Components
+
+### 🕹 Installing Steam
+
+Steam is available in Debian via the `non-free` repository.
+
+```bash
+sudo nala install -y steam-installer
+```
+
+You also need to install the necessary system libraries:
+
+```bash
+sudo nala install -y mesa-vulkan-drivers libglx-mesa0:i386 mesa-vulkan-drivers:i386 libgl1-mesa-dri:i386
+```
+
+After installation, launch Steam and log in to your account.
+
+### 🍷 Installing PortProton (GUI for Proton GE and Wine)
+
+**PortProton** is a convenient graphical interface for installing Windows games and applications using Proton GE, Wine, and other tools.
+
+```bash
+wget https://github.com/Castro-Fidel/PortProton_dpkg/releases/download/portproton_amd64/portproton_amd64.deb
+sudo nala install ./portproton_amd64.deb
+rm -rf ./portproton_amd64.deb
+```
+
+---
+
 ## 🗂️ Dotfiles Installation and Usage
 
 **Dotfiles** are config files that store your personal settings for the shell, editors, tools, and window manager.
