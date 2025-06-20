@@ -124,9 +124,9 @@ alias gsub="git submodule update --init --recursive"
 # Change default tools to alternative
 alias cat="batcat -p -P --theme base16"
 alias cd="z"
-alias l="eza -l --git -a"
-alias lt="eza --tree --level=2 --long --git"
-alias ltree="eza --tree --level=2 --git"
+alias l="eza -l --git -a --icons"
+alias lt="eza --tree --level=2 --long --git --icons"
+alias ltree="eza --tree --level=2 --git --icons"
 alias du="dust"
 alias ps="procs"
 alias sed="sd"
@@ -150,7 +150,6 @@ export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 #---- Evals ----
 #---------------
 
-eval "$(ssh-agent -s)"
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 
