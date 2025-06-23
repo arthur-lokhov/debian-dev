@@ -21,11 +21,11 @@ set $GAP_NULL		00
 #---- Colors ----
 #----------------
 
-set $CL_PRI             #9A79AF
-set $CL_SCR             #1F1B24
-set $CL_BLK             #2C2633
-set $CL_TXT             #E0DEF4
-set $CL_URG             #D16D9E
+set $CL_PRI             #3DDC84
+set $CL_SCR             #121212
+set $CL_BLK             #1E1E1E
+set $CL_TXT             #E6E1E5
+set $CL_URG             #FF3B30
 
 #--------------
 #---- Misc ----
