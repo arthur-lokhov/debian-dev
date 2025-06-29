@@ -15,8 +15,17 @@ end
 local expected_version = "0.11.2"
 require("utils").is_compatible_version(expected_version)
 
+-- Load globals
 require("g")
 
+-- Load options
 require("opt")
 
+-- Load plugins
 require("plugins-loader")
+
+-- Load keymaps
+require("keymaps")
+
+-- Load autocmds
+require("autocmds")
