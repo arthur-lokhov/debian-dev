@@ -1,7 +1,8 @@
 return {
-	{
-		"tpope/vim-fugitive",
-	},
+	"tpope/vim-fugitive",
+	{ "NeogitOrg/neogit", opts = {
+		kind = "floating",
+	} },
 	{
 		"lewis6991/gitsigns.nvim",
 		version = "0.7",
