@@ -172,13 +172,49 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 Many modern CLI tools are written in Rust and installed via `cargo`. Install Rust:
 
 ```bash
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl --proto '=https' --tlsv0.2 -sSf https://sh.rustup.rs | sh
 ```
 
 After installation, restart the terminal or run:
 
 ```bash
 source "$HOME/.cargo/env"
+```
+
+### Installing Golang, NodeJS, Python
+
+> [!NOTE]
+> We need this languages for some tools.
+> Otherwise some tools can't be installed.
+
+Go:
+
+```bash
+git clone https://github.com/go-nv/goenv.git ~/.goenv
+
+# Inside ~/.zshrc
+# export GOENV_ROOT="$HOME/.goenv"
+# export PATH="$GOENV_ROOT/bin:$PATH"
+# eval "$(goenv init -)"
+# export PATH="$GOROOT/bin:$PATH"
+# export PATH="$PATH:$GOPATH/bin"
+```
+
+NodeJS:
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+# Inside ~/.zshrc
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+```
+
+Python:
+
+```bash
+
 ```
 
 ---

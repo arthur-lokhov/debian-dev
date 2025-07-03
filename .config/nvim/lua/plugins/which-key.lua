@@ -16,6 +16,7 @@ return {
 				{ "<leader>dp", group = "profiler" },
 				{ "<leader>f", group = "file/find" },
 				{ "<leader>g", group = "git" },
+				{ "<leader>p", group = "preview", icon = { icon = " ", color = "cyan" } },
 				{ "<leader>gh", group = "hunks" },
 				{ "<leader>r", group = "refactor" },
 				{ "<leader>q", group = "quit/session" },

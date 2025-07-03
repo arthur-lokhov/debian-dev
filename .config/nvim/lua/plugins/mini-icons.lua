@@ -31,7 +31,7 @@ return {
 				sql = { glyph = "󰆼", hl = "MiniIconsRed" },
 				go = { glyph = "", hl = "MiniIconsBlue" },
 				javascript = { glyph = "", hl = "MiniIconsYellow" },
-                typescript = { glyph = "", hl = "MiniIconsBlue" },
+				typescript = { glyph = "", hl = "MiniIconsBlue" },
 			},
 		})
 	end,

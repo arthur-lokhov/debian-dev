@@ -27,14 +27,17 @@ g.loaded_ruby_provider = 0 -- Disable ruby provider
 g.loaded_node_provider = 0 -- Disable node provider
 
 if utils.executable("python3") then
-  if g.is_win then
-    g.python3_host_prog = fn.substitute(fn.exepath("python3"), ".exe$", "", "g")
-  else
-    g.python3_host_prog = fn.exepath("python3")
-  end
+	if g.is_win then
+		g.python3_host_prog = fn.substitute(fn.exepath("python3"), ".exe$", "", "g")
+	else
+		g.python3_host_prog = fn.exepath("python3")
+	end
 else
-  vim.api.nvim_err_writeln("Python3 executable not found! You must install Python3 and set its PATH correctly!")
-  return
+	vim.api.nvim_echo({
+		{ "Python3 executable not found! You must install Python3 and set its PATH correctly!", "ErrorMsg" },
+	}, true, {})
+
+	return
 end
 
 -- [[ Disable some built-in plugins for speed ]]

@@ -1,4 +1,4 @@
- return {
+return {
 	"stevearc/oil.nvim",
 	event = "VeryLazy",
 	opts = {
@@ -30,4 +30,4 @@
 	config = function(_, opts)
 		require("oil").setup(opts)
 	end,
-}                 
+}

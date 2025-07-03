@@ -44,29 +44,29 @@ opt.mousemodel = "popup" -- Disable the mouse
 -- [[ Searching ]]
 opt.ignorecase = true -- Disable case-sensitive searching
 opt.smartcase = true -- Disable case-sensitive searching
-opt.wildignore:append {
-  "*.o",
-  "*.obj",
-  "*.dylib",
-  "*.bin",
-  "*.dll",
-  "*.exe", -- binary
-  "*/.git/*",
-  "*/.svn/*", -- folders
-  "*.jpg",
-  "*.png",
-  "*.jpeg",
-  "*.bmp",
-  "*.gif",
-  "*.tiff",
-  "*.svg",
-  "*.ico", -- media
-} -- Ignore specific files and folders in global search
+opt.wildignore:append({
+	"*.o",
+	"*.obj",
+	"*.dylib",
+	"*.bin",
+	"*.dll",
+	"*.exe", -- binary
+	"*/.git/*",
+	"*/.svn/*", -- folders
+	"*.jpg",
+	"*.png",
+	"*.jpeg",
+	"*.bmp",
+	"*.gif",
+	"*.tiff",
+	"*.svg",
+	"*.ico", -- media
+}) -- Ignore specific files and folders in global search
 opt.wildignorecase = true -- Ignore case for wildignore
 
 if vim.fn.executable("rg") == 1 then
-  opt.grepprg = "rg --vimgrep --no-heading --smart-case"
-  opt.grepformat = "%f:%l:%c:%m"
+	opt.grepprg = "rg --vimgrep --no-heading --smart-case"
+	opt.grepformat = "%f:%l:%c:%m"
 end -- External program for grep command
 
 -- [[ Split ]]
@@ -76,20 +76,20 @@ opt.splitkeep = "screen" -- Remove flickering when splitting a window horizontal
 
 -- [[ Chars ]]
 opt.fillchars = {
-  fold = " ",
-  foldsep = " ",
-  foldopen = "",
-  foldclose = "",
-  vert = "│",
-  eob = " ",
-  msgsep = "‾",
-  diff = "╱",
+	fold = " ",
+	foldsep = " ",
+	foldopen = "",
+	foldclose = "",
+	vert = "│",
+	eob = " ",
+	msgsep = "‾",
+	diff = "╱",
 } -- List of fillchars characters
 opt.listchars = {
-  tab = "▸ ",
-  extends = "❯",
-  precedes = "❮",
-  nbsp = "␣",
+	tab = "▸ ",
+	extends = "❯",
+	precedes = "❮",
+	nbsp = "␣",
 } -- List of display characters
 opt.tildeop = true -- Using the tilde (~) as an operator
 opt.isfname:remove("=") -- Remove this character (=) from file name patterns
@@ -97,19 +97,19 @@ opt.isfname:remove(",") -- Remove this character (,) from file name patterns
 
 -- [[ Clipboard ]]
 if vim.fn.has("clipboard") == 1 then
-  opt.clipboard:append("unnamedplus") -- Settings for working with the clipboard
+	opt.clipboard:append("unnamedplus") -- Settings for working with the clipboard
 end
 
 -- [[ Diff ]]
 opt.diffopt = {
-  "vertical",
-  "filler",
-  "closeoff",
-  "context:3",
-  "internal",
-  "indent-heuristic",
-  "algorithm:histogram",
-  "linematch:60",
+	"vertical",
+	"filler",
+	"closeoff",
+	"context:3",
+	"internal",
+	"indent-heuristic",
+	"algorithm:histogram",
+	"linematch:60",
 }
 
 -- [[ Swapfile ]]

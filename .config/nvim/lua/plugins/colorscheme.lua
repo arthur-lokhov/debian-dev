@@ -1,17 +1,17 @@
 return {
-    "folke/tokyonight.nvim",
+	"folke/tokyonight.nvim",
 	priority = 1000,
-    opts = {
-        style = "night",
-        transparent = vim.g.transparent_enabled,
-        terminal_colors = true,
+	opts = {
+		style = "night",
+		transparent = vim.g.transparent_enabled,
+		terminal_colors = true,
 		styles = {
 			comments = { italic = false },
 			keywords = { italic = false },
 		},
-    },
-    config = function(_, opts)
-        require("tokyonight").setup(opts)
-        vim.cmd([[colorscheme tokyonight]])
-    end,
+	},
+	config = function(_, opts)
+		require("tokyonight").setup(opts)
+		vim.cmd([[colorscheme tokyonight]])
+	end,
 }

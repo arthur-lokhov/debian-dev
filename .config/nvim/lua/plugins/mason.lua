@@ -1,14 +1,3 @@
-local border = {
-	{ "╭", "FloatBorder" },
-	{ "─", "FloatBorder" },
-	{ "╮", "FloatBorder" },
-	{ "│", "FloatBorder" },
-	{ "╯", "FloatBorder" },
-	{ "─", "FloatBorder" },
-	{ "╰", "FloatBorder" },
-	{ "│", "FloatBorder" },
-}
-
 return {
 	"williamboman/mason.nvim",
 	dependencies = {
@@ -33,10 +22,35 @@ return {
 
 		mason_lspconfig.setup({
 			automatic_installation = false,
-			ensure_installed = {}, -- Servers to install
+			automatic_enable = false,
+			ensure_installed = {
+				"lua_ls", -- Lua
+				"gopls", -- Golang
+				"templ", -- Go Templ
+				-- "autotools_ls", -- Makefile
+				"kotlin_lsp",
+				"starpls", -- Bazel
+				"bashls", -- Bash
+				"html", -- HTML
+				"cssls", -- CSS
+				"tailwindcss", -- Tailwind CSS
+				"dockerls", -- Docker
+				"docker_compose_language_service", -- Docker Compose
+				"helm_ls", -- Helm
+				"graphql", -- GraphQL,
+				"jsonls", -- JSON
+				"lemminx", -- XML
+				"yamlls", -- YAML
+				"ts_ls", -- JS/TS,
+				"vuels", -- Vue
+				"svelte", -- Svelte
+			}, -- Servers to install
 		})
 
+		-- Don't use formatter for Go
 		mason_tool_installer.setup({
+			automatic_installation = false,
+			automatic_enable = false,
 			ensure_installed = {
 				"stylua", -- Lua formatter
 			},

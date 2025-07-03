@@ -5,7 +5,7 @@ opacity = 0.85
 blur = true
 
 [font]
-normal = { family = "UbuntuMono Nerd Font", style = "Regular" }
+normal = { family = "DepartureMono Nerd Font", style = "Regular" }
 size = 13
 
 # Colors (Tokyo Night Storm variant)
